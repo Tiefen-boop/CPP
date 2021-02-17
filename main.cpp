@@ -1,30 +1,19 @@
 #include <iostream>
 #include "./calculator/calculator.h"
+#include "./fibonacci/fibonacci.h"
 
-int add(int x, int y);
-
-using namespace std;
-
-int fibonacci(int n){
-    if (n <= 1)
-    {
-        return 1;
-    }
-    return fibonacci(n-1) + fibonacci(n-2);
-}
+using std::cout; using std::endl; using std::cin;
 
 int main() {
-    cout << "Select number to use app:\n1 - Calculator\n";
+    cout << "Select number to use app:\n1 - Calculator\n2 - fibonacci printer\n";
     int x;
     cin >> x;
     switch (x) {
         case 1:
             calcMenu();
             break;
+        case 2:
+            fibMenu();
+            break;
     }
 }
-
-int add (int x, int y){
-    return x+y;
-}
-

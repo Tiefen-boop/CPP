@@ -57,4 +57,5 @@ int calcMenu() {
             break;
     }
     cout << x << op << y << '=' << result << endl;
+    return 0;
 }
